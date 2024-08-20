@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	//Idioma Português
+	setlocale(LC_ALL, "portuguese");
+	
+	//Variáveis
+	int numero1, numero2; 
+
+
+	printf("Digite o primeiro número: ");
+	  scanf("%d", &numero1); 
+	
+	printf("Digite o segundo número: ");
+	  scanf("%d", &numero2);
+	  
+    //Variável para a Soma
+    int soma;
+    soma = numero1+numero2;
+    
+    //Resultado da soma
+    printf("O resultado da soma de %d e %d é %d", numero1, numero2, soma);
+	  
+    
+}
+
