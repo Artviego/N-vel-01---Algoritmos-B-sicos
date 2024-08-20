@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	//Idioma Português
+	setlocale(LC_ALL, "portuguese");
+	
+	//Variáveis
+	int numero, cont = 0;
+	
+	printf("Digite um número: ");
+	  scanf("%d", &numero);
+	
+	for (cont = 0; cont <= 10; cont++){
+		printf("%d x %d = %d \n", numero, cont, numero * cont);
+	}
+	return 0;
+}
