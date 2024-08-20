@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	//Idioma Português
+	setlocale(LC_ALL, "portuguese");
+	
+	//Variáveis
+	int n, i, fatorial;
+	
+	printf("Digite o valor de n: ");
+	  scanf("%d", &n);
+	
+	//Fatorial
+	if (n>=0) {
+		fatorial = 1;
+		for (i=n; i>=2; i--){
+			fatorial = fatorial * i;
+			
+		}
+		printf("O fatorial de %d é %d",n, fatorial);
+	
+    }
+    else{
+    	printf("O valor de n digitado deveria ser positivio!");
+    	
+	}
+	
+	return 0;
+}
