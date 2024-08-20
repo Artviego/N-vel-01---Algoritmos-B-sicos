@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	//Idioma Português
+	setlocale(LC_ALL, "portuguese");
+	
+	//Variáveis
+	int numero1, numero2;
+	
+	printf("Digite o primeiro número: ");
+	  scanf("%d", &numero1);
+	
+	printf("Digite o segundo número: ");
+	  scanf("%d", &numero2);
+	  
+	
+	//Exibe qual é o maior deles
+	if (numero1 > numero2){
+		printf("\n %d é maior que %d", numero1, numero2);
+	}else{
+		printf("\n %d é maior que %d", numero2, numero1);
+	}
+    
+	  
+    
+}
