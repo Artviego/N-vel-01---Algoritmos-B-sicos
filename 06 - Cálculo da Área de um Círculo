@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+	//Idioma Português
+	setlocale(LC_ALL, "portuguese");
+	
+	//Variáveis
+	float raio, pi, area;
+	
+	printf("Digite o valor do raio da circunferência: ");
+	  scanf("%f", &raio);
+	
+	//Calcula a área
+	pi = 3.14;
+	area = pi * pow(raio, 2);
+	
+	printf("A área do círculo é: %.2f", area);
+    
+}
